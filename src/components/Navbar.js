@@ -3,6 +3,13 @@ import {Link} from 'react-router-dom';
 import logo from '../logo.svg';
 import styled from 'styled-components';
 import {ButtonContainer} from './Button';
+const NavWrapper = styled.nav`
+background:var(--mainBlue);
+.nav-link{
+    color:var(--mainWhite) !important;
+    font-size:1.3 rem;
+    text-transform:capitalize;
+}`;
 
 export default class Navbar extends Component {
     render() {
@@ -26,12 +33,4 @@ export default class Navbar extends Component {
             </NavWrapper>
         )
     }
-}
-const NavWrapper = styled.nav`
-background:var(--mainBlue);
-.nav-link{
-    color:var(--mainWhite) !important;
-    font-size:1.3 rem;
-    text-transform:capitalize;
-}
-`;
+};
